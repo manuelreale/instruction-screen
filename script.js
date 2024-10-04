@@ -107,7 +107,7 @@ function hide(){
 
     let top = document.getElementById("top");
     let options = document.getElementById("options");
-    let bg = document.getElementById("bg");
+    let bg = document.getElementById("background");
 
     bg.classList.add("highlight")
 
@@ -125,7 +125,7 @@ function show(){
 
     let top = document.getElementById("top");
     let options = document.getElementById("options");
-    let bg = document.getElementById("bg");
+    let bg = document.getElementById("background");
 
     bg.classList.remove("highlight")
 
