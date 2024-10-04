@@ -118,7 +118,7 @@ html {
 
 #background.highlight {
     opacity: 40%;
-    transform: scale(150%, 400%);
+    transform: scale(100%, 400%);
     /* background-size: 150% 400%; */
     transition: var(--hide) ease-in 0.5s;
 }
@@ -127,7 +127,7 @@ html {
     opacity: 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
-    transform: scale(200%, 200%);
+    transform: scale(100%, 200%);
     /* background-size: 200% 500%; */
     transition: calc(var(--hide) * 2) ease-out;
 }
