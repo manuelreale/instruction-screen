@@ -132,7 +132,9 @@ function show(){
     let options = document.getElementById("options");
     let bg = document.getElementById("background");
 
-    bg.classList.remove("highlight")
+    setTimeout(function(){bg.classList.remove("highlight")}, 2200);
+
+    
 
     // bg0.classList.remove("hide");
     // bg1.classList.remove("hide");
@@ -182,7 +184,7 @@ function receiveJSON(flow, step){
     }, 800);
 
     if(message.AnimationType=="Instant"){
-        setTimeout(show, 1200);
+        setTimeout(show, 2000);
     }
 }
 

@@ -117,10 +117,11 @@ html {
 }
 
 #background.highlight {
-    opacity: 40%;
-    transform: scale(100%, 400%);
+    /* opacity: 40%; */
+    /* transform: scale(100%, 400%); */
     /* background-size: 150% 400%; */
     transition: var(--hide) ease-in 0.5s;
+    animation: anim 3s ease-in 0.5s 1 forwards;
 }
 
 #background.highlight::after{
@@ -131,6 +132,23 @@ html {
     /* background-size: 200% 500%; */
     transition: calc(var(--hide) * 2) ease-out;
 }
+
+@keyframes anim {
+    0% {
+        transform: scale(100%, 100%);
+        opacity: 20%;
+    }
+    55% {
+        opacity: 50%;
+    }
+    70% {
+        transform: scale(100%, 400%);
+    }
+    100%{
+        transform: scale(100%, 100%);
+        opacity: 20%;
+    }
+  }
 
 /* #bg0{
     --height: 100%;
@@ -182,25 +200,6 @@ html {
     --height: 40%;
     transition: calc(var(--hide) * 2) ease-out;
 }
-
-@keyframes bg0show {
-    0% {
-        --height: 250%;
-        opacity: 50%;
-    }
-    50% {
-        --height: 350%;
-        opacity: 0%;
-    }
-    51% {
-        --height: 70%;
-        opacity: 0%;
-    }
-    100% {
-        opacity: 30%;
-    }
-  } */
-
 
 
 /* html::after {
