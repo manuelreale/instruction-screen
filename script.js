@@ -1,6 +1,11 @@
 let currentStep = 0;
 let currentFlow = 0;
 
+document.onkeypress = function (e) {
+    e = e || window.event;
+    receiveJSON(1, 0)
+};
+
 // createOptions(currentStep);
 // changeText(currentStep);
 
