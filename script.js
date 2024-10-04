@@ -102,8 +102,8 @@ function changeText(message){
 }
 
 function hide(){
-    let bg0 = document.getElementById("bg0");
-    let bg1 = document.getElementById("bg1");
+    // let bg0 = document.getElementById("bg0");
+    // let bg1 = document.getElementById("bg1");
 
     let top = document.getElementById("top");
     let options = document.getElementById("options");
@@ -111,8 +111,8 @@ function hide(){
 
     bg.classList.add("highlight")
 
-    bg0.classList.add("hide");
-    bg1.classList.add("hide");
+    // bg0.classList.add("hide");
+    // bg1.classList.add("hide");
 
     top.classList.add("hide");
     options.classList.add("hide");
@@ -120,8 +120,8 @@ function hide(){
 }
 
 function show(){
-    let bg0 = document.getElementById("bg0");
-    let bg1 = document.getElementById("bg1");
+    // let bg0 = document.getElementById("bg0");
+    // let bg1 = document.getElementById("bg1");
 
     let top = document.getElementById("top");
     let options = document.getElementById("options");
@@ -129,8 +129,8 @@ function show(){
 
     bg.classList.remove("highlight")
 
-    bg0.classList.remove("hide");
-    bg1.classList.remove("hide");
+    // bg0.classList.remove("hide");
+    // bg1.classList.remove("hide");
 
     top.classList.remove("hide");
     options.classList.remove("hide");
