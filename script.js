@@ -177,7 +177,7 @@ function receiveJSON(flow, step){
     }, 800);
 
     if(message.AnimationType=="Instant"){
-        setTimeout(show, 900);
+        setTimeout(show, 1200);
     }
 }
 
