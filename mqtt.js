@@ -7,8 +7,8 @@ function startConnect(){
     // userId  = document.getElementById("username").value;  
     // passwordId = document.getElementById("password").value;  
 
-    host = "192.178.200.178";   
-    port = 9001; 
+    host = "192.178.200.178";
+    port = "9001";
     userId  = "";  
     passwordId = "";   
 
@@ -28,9 +28,9 @@ function startConnect(){
 //        userName: userId,
  //       passwordId: passwordId
     });
-
-
 }
+
+startConnect();
 
 
 function onConnect(){
