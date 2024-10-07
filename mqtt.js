@@ -2,7 +2,7 @@ function startConnect(){
 
     clientID = "clientID - "+parseInt(Math.random() * 100);
 
-    host = "192.178.200.178";
+    host = "192.168.200.178";
     port = "9001";
     userId  = "";  
     passwordId = "";   
@@ -43,7 +43,7 @@ function onConnectionLost(responseObject){
 
 function onMessageArrived(message){
     // receiveJSON(1, 0);
-    receiveMQTT(message)
+    receiveMQTT(message.payloadString);
     console.log("OnMessageArrived: "+message.payloadString);
     console.log("Topic: "+message.destinationName+"| Message : "+message.payloadString);
 }
