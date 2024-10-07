@@ -188,7 +188,9 @@ function receiveJSON(flow, step){
     }
 }
 
-function receiveMQTT(message){
+function receiveMQTT(messageString){
+    let message = JSON.parse(messageString);
+
     // message = content[flow].Steps[step];
     hide();
 
