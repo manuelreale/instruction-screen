@@ -188,6 +188,20 @@ function receiveJSON(flow, step){
     }
 }
 
+function receiveMQTT(message){
+    // message = content[flow].Steps[step];
+    hide();
+
+    setTimeout(function() {
+        createOptions(message); 
+        changeText(message);
+    }, 800);
+
+    if(message.AnimationType=="Instant"){
+        setTimeout(show, 2000);
+    }
+}
+
 function finish(){
     setTimeout(show, 100);
 }
